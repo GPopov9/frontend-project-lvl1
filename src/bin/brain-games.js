@@ -1,5 +1,7 @@
 #!/usr/bin/env node
-console.log("Welcome to the Brain Games!");
-console.log("");
-import {questionCheck} from '../index.js';
+
+import { questionCheck } from '../index';
+
+console.log('Welcome to the Brain Games!');
+console.log('');
 questionCheck();
