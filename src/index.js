@@ -21,8 +21,7 @@ export const randomNum = (name) => {
     if (answer === correctAnswer) {
       gameMessage('Correct!');
     } else {
-      gameMessage(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      gameMessage(`Let's try again, ${name}!`);
+      gameMessage(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`);
       return;
     }
   }
