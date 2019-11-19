@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
-import questionCheck from '../index';
+import { gameMessage, setName } from '../index';
 
-console.log('Welcome to the Brain Games!');
-console.log('');
-questionCheck();
+gameMessage('Welcome to the Brain Games!\n');
+
+
+const userName = setName();
+gameMessage(`Hello, ${userName}!`);
