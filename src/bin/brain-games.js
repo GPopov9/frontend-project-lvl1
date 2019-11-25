@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { gameMessage, setName } from '../index';
+import { gameMessage, setName } from '..';
 
 gameMessage('Welcome to the Brain Games!\n');
 const userName = setName();
