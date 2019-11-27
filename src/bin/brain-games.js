@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import { gameMessage, setName } from '..';
+import { brainGames } from '../games/games';
 
-gameMessage('Welcome to the Brain Games!\n');
-const userName = setName();
-gameMessage(`Hello, ${userName}!`);
+brainGames();
