@@ -1,7 +1,7 @@
-import { engineMessage } from '../engine.js';
+import engineBasic from '../engine';
 
 const gameDescription = '';
 
-export const brainGames = () => {
-    engineMessage(gameDescription);
+export default () => {
+  engineBasic(gameDescription);
 };

@@ -1,4 +1,3 @@
-import { brainCalc } from '../games/calc';
+import brainCalc from '../games/calc';
 
 brainCalc();
-
