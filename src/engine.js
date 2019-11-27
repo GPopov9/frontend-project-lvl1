@@ -11,7 +11,6 @@ export default (message, func) => {
   for (let i = 0; i < 3; i += 1) {
     const pair = func();
     anyMessage(`Question: ${car(pair)}`);
-    anyMessage(cdr(pair));
     const answer = readlineSync.question('Your answer: ');
 
     if (answer == cdr(pair)) {
