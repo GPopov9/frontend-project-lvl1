@@ -15,7 +15,7 @@ const pureGCD = (a, b) => {
     if (firstNum > secondNum) firstNum -= secondNum;
     else secondNum -= firstNum;
   }
-  return firstNum;
+  return String(firstNum);
 };
 
 const makePairGCD = () => {

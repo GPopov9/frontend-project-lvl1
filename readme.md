@@ -125,3 +125,43 @@ Correct!
 Congratulations, George!                                                                                                                                                                       
 ~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ ex                                                                                                                           
 
+
+----
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fsevents):                                                                                                        
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})                              
+                                                                                                                                                                                               
+audited 4051 packages in 3.923s                                                                                                                                                                
+                                                                                                                                                                                               
+5 packages are looking for funding                                                                                                                                                             
+  run `npm fund` for details                                                                                                                                                                   
+                                                                                                                                                                                               
+found 0 vulnerabilities                                                                                                                                                                        
+                                                                                                                                                                                               
+/usr/local/bin/brain-games -> /usr/local/lib/node_modules/frontend-project-1/dist/bin/brain-games.js                                                                                           
+/usr/local/bin/brain-even -> /usr/local/lib/node_modules/frontend-project-1/dist/bin/brain-even.js                                                                                             
+/usr/local/bin/brain-calc -> /usr/local/lib/node_modules/frontend-project-1/dist/bin/brain-calc.js                                                                                             
+/usr/local/bin/brain-gcd -> /usr/local/lib/node_modules/frontend-project-1/dist/bin/brain-gcd.js                                                                                               
+/usr/local/bin/brain-progression -> /usr/local/lib/node_modules/frontend-project-1/dist/bin/brain-progression.js                                                                               
+/usr/local/bin/brain-prime -> /usr/local/lib/node_modules/frontend-project-1/dist/bin/brain-prime.js                                                                                           
+/usr/local/lib/node_modules/frontend-project-1 -> /home/george/Documents/_Projects/5_Hexlet/frontend-project-lvl1                                                                              
+:~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$                                                                                                                              
+
+Answer "yes" if given number is prime. Otherwise answer "no".                                                                                                                                  
+                                                                                                                                                                                               
+May I have your name? George                                                                                                                                                                   
+Hello, George!                                                                                                                                                                                 
+                                                                                                                                                                                               
+Question: 2                                                                                                                                                                                    
+Your answer: yes                                                                                                                                                                               
+Correct!                                                                                                                                                                                       
+Question: 64                                                                                                                                                                                   
+Your answer: no                                                                                                                                                                                
+Correct!                                                                                                                                                                                       
+Question: 20                                                                                                                                                                                   
+Your answer: no                                                                                                                                                                                
+Correct!                                                                                                                                                                                       
+Congratulations, George!                                                                                                                                                                       
+~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ exit                                                                                                                         
+exit                                                                                                                                                                                           
+                                                                                                                                                                                               
+
