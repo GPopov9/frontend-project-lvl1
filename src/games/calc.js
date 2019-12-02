@@ -9,7 +9,20 @@ const makePairCalc = () => {
   const randomNumberTwo = Math.floor(Math.random() * 101);
   const operatorSet = ['+', '-', '*'];
   const randomOperator = operatorSet[Math.floor(Math.random() * operatorSet.length)];
-  const result = eval((`${randomNumberOne}${randomOperator}${randomNumberTwo}`));
+  let result = '';
+  switch (randomOperator) {
+    case '+':
+      result = String(randomNumberOne + randomNumberTwo);
+      break;
+    case '-':
+      result = String(randomNumberOne - randomNumberTwo);
+      break;
+    case '*':
+      result = String(randomNumberOne * randomNumberTwo);
+      break;
+    default:
+      break;
+  }
   const pair = make((`${randomNumberOne}${randomOperator}${randomNumberTwo}`), result);
   return pair;
 };

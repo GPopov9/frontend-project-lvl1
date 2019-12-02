@@ -8,13 +8,16 @@ const progression = (x, y, z) => {
   let string = (` ${x}`);
   const empty = '..';
   const secret = x + z * y;
+  let sum = x;
+  if (z === 0) string = empty;
+
   for (let i = 1; i <= 9; i += 1) {
     if (i !== z) {
-      x += y;
-      string += (` ${x}`);
+      sum += y;
+      string += (` ${sum}`);
     } else {
       string += (` ${empty}`);
-      x += y;
+      sum += y;
     }
   }
   const result = make(string, secret);

@@ -109,3 +109,19 @@ found 0 vulnerabilities
 /usr/local/bin/brain-gcd -> /usr/local/lib/node_modules/frontend-project-1/dist/bin/brain-gcd.js                                                                                               
 /usr/local/bin/brain-progression -> /usr/local/lib/node_modules/frontend-project-1/dist/bin/brain-progression.js                                                                               
 /usr/local/lib/node_modules/frontend-project-1 -> /home/george/Documents/_Projects/5_Hexlet/frontend-project-lvl1   
+                                                                                                                                                                                               
+May I have your name? George                                                                                                                                                                   
+Hello, George!                                                                                                                                                                                 
+                                                                                                                                                                                               
+Question:  0 7 14 21 28 35 42 49 .. 63                                                                                                                                                         
+Your answer: 56                                                                                                                                                                                
+Correct!                                                                                                                                                                                       
+Question:  4 11 18 25 32 .. 46 53 60 67                                                                                                                                                        
+Your answer: 39                                                                                                                                                                                
+Correct!                                                                                                                                                                                       
+Question:  0 0 0 0 0 .. 0 0 0 0                                                                                                                                                                
+Your answer: 0                                                                                                                                                                                 
+Correct!                                                                                                                                                                                       
+Congratulations, George!                                                                                                                                                                       
+~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ ex                                                                                                                           
+

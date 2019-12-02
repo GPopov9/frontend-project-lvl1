@@ -13,7 +13,7 @@ export default (message, func) => {
     anyMessage(`Question: ${car(pair)}`);
     const answer = readlineSync.question('Your answer: ');
 
-    if (answer == cdr(pair)) {
+    if (answer === cdr(pair)) {
       anyMessage('Correct!');
     } else {
       anyMessage(`'${answer}' is wrong answer ;(. Correct answer was '${cdr(pair)}'.\nLet's try again, ${name}!`);
