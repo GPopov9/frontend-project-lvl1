@@ -1,7 +1,7 @@
 import { cons } from '@hexlet/pairs';
 import engineBasic from '../engine';
 
-const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".\n';
+const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 const make = (x, y) => cons(x, y);
 
 const makePairEven = () => {

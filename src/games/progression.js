@@ -1,7 +1,7 @@
 import { cons, car, cdr } from '@hexlet/pairs';
 import engineBasic from '../engine';
 
-const gameDescription = 'What number is missing in the progression?\n';
+const gameDescription = 'What number is missing in the progression?';
 const make = (x, y) => cons(x, y);
 
 const progression = (x, y, z) => {

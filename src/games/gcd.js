@@ -1,7 +1,7 @@
 import { cons } from '@hexlet/pairs';
 import engineBasic from '../engine';
 
-const gameDescription = 'Find the greatest common divisor of given numbers.\n';
+const gameDescription = 'Find the greatest common divisor of given numbers.';
 const make = (x, y) => cons(x, y);
 
 // Fucnction for GCD (Non-export)

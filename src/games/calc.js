@@ -1,7 +1,7 @@
 import { cons } from '@hexlet/pairs';
 import engineBasic from '../engine';
 
-const gameDescription = 'What is the result of the expression?\n';
+const gameDescription = 'What is the result of the expression?';
 const make = (x, y) => cons(x, y);
 
 const makePairCalc = () => {

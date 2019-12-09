@@ -1,7 +1,7 @@
 import { cons } from '@hexlet/pairs';
 import engineBasic from '../engine';
 
-const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".\n';
+const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const make = (x, y) => cons(x, y);
 
 const makePairPrime = () => {
