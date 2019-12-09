@@ -2,7 +2,6 @@ import { cons, car, cdr } from '@hexlet/pairs';
 import engineBasic from '../engine';
 
 const gameDescription = 'What number is missing in the progression?';
-const make = (x, y) => cons(x, y);
 
 const progression = (x, y, z) => {
   let string = (` ${x}`);
@@ -20,7 +19,7 @@ const progression = (x, y, z) => {
       sum += y;
     }
   }
-  const result = make(string, secret);
+  const result = cons(string, secret);
   return result;
 };
 
@@ -29,7 +28,7 @@ const makePairProgression = () => {
   const randomStep = Math.floor(Math.random() * 10);
   const randomPosition = Math.floor(Math.random() * 10);
   const final = progression(randomStart, randomStep, randomPosition);
-  const pair = make((`${car(final)}`), (`${cdr(final)}`));
+  const pair = cons((`${car(final)}`), (`${cdr(final)}`));
   return pair;
 };
 

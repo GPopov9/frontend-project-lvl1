@@ -2,7 +2,6 @@ import { cons } from '@hexlet/pairs';
 import engineBasic from '../engine';
 
 const gameDescription = 'Find the greatest common divisor of given numbers.';
-const make = (x, y) => cons(x, y);
 
 // Fucnction for GCD (Non-export)
 const pureGCD = (a, b) => {
@@ -24,7 +23,7 @@ const makePairGCD = () => {
   const xTemp = randomNumberOne;
   const yTemp = randomNumberTwo;
   const result = pureGCD(xTemp, yTemp);
-  const pair = make((`${randomNumberOne} ${randomNumberTwo}`), result);
+  const pair = cons((`${randomNumberOne} ${randomNumberTwo}`), result);
   return pair;
 };
 

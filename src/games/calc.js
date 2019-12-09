@@ -2,7 +2,6 @@ import { cons } from '@hexlet/pairs';
 import engineBasic from '../engine';
 
 const gameDescription = 'What is the result of the expression?';
-const make = (x, y) => cons(x, y);
 
 const makePairCalc = () => {
   const randomNumberOne = Math.floor(Math.random() * 101);
@@ -23,7 +22,7 @@ const makePairCalc = () => {
     default:
       break;
   }
-  const pair = make((`${randomNumberOne}${randomOperator}${randomNumberTwo}`), result);
+  const pair = cons((`${randomNumberOne}${randomOperator}${randomNumberTwo}`), result);
   return pair;
 };
 
