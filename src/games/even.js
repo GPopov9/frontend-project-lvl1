@@ -4,14 +4,11 @@ import { randomNumber } from '..';
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
+const isEven = (number) => (number % 2 === 0) ? 'yes' : 'no';
+
 const makePairEven = () => {
-  const randomNumberOne = randomNumber();
-  let result = randomNumberOne % 2;
-  if (result === 0) {
-    result = 'yes';
-  } else result = 'no';
-  const pair = cons(randomNumberOne, result);
-  return pair;
+  const randomNumberOne = randomNumber();  
+  return cons(randomNumberOne,isEven(randomNumberOne))
 };
 
 export default () => {
