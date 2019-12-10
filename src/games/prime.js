@@ -1,10 +1,11 @@
 import { cons } from '@hexlet/pairs';
 import engineBasic from '../engine';
+import { randomNumber } from '..';
 
 const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const makePairPrime = () => {
-  const randomNumberOne = Math.floor(Math.random() * 101);
+  const randomNumberOne = randomNumber();
   let result = 'yes';
   if (randomNumberOne > 2) {
     for (let i = 3; i < randomNumberOne; i += 1) {
