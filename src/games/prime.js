@@ -4,16 +4,15 @@ import { randomNumber } from '..';
 
 const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
+const isPrime = (number) => {
+  for (let i = 2; i < number; i += 1) 
+    if (number % i === 0) return 'no';
+  return 'yes';
+};
+
 const makePairPrime = () => {
   const randomNumberOne = randomNumber();
-  let result = 'yes';
-  if (randomNumberOne > 2) {
-    for (let i = 3; i < randomNumberOne; i += 1) {
-      if (randomNumberOne % i === 0) result = 'no';
-    }
-  }
-  const pair = cons(randomNumberOne, result);
-  return pair;
+  return cons(randomNumberOne,isPrime(randomNumberOne));
 };
 
 export default () => {

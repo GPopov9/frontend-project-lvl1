@@ -4,7 +4,6 @@ import { randomNumber } from '..';
 
 const gameDescription = 'Find the greatest common divisor of given numbers.';
 
-// Fucnction for GCD (Non-export)
 const pureGCD = (a, b) => {
   let firstNum = a;
   let secondNum = b;
@@ -23,9 +22,7 @@ const makePairGCD = () => {
   const randomNumberTwo = randomNumber();
   const xTemp = randomNumberOne;
   const yTemp = randomNumberTwo;
-  const result = pureGCD(xTemp, yTemp);
-  const pair = cons((`${randomNumberOne} ${randomNumberTwo}`), result);
-  return pair;
+  return cons((`${randomNumberOne} ${randomNumberTwo}`), pureGCD(xTemp, yTemp));
 };
 
 export default () => {
