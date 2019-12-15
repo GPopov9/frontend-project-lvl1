@@ -1,35 +1,32 @@
 import { cons, car, cdr } from '@hexlet/pairs';
 import engineBasic from '../engine';
+import { randomProgression } from '..';
 
 const gameDescription = 'What number is missing in the progression?';
 
 const progression = (x, y, z) => {
-  let string = (` ${x}`);
-  const empty = '..';
-  const secret = x + z * y;
-  let sum = x;
-  if (z === 0) string = empty;
+  const length = 10;
+  let stringQuestion = '';
+  let secretItem = 0;
 
-  for (let i = 1; i <= 9; i += 1) {
+  for (let i = 1; i <= length; i += 1) {
+    const progressionItem = x + y * (i - 1);
     if (i !== z) {
-      sum += y;
-      string += (` ${sum}`);
+      stringQuestion = `${stringQuestion} ${progressionItem}`;
     } else {
-      string += (` ${empty}`);
-      sum += y;
+      stringQuestion = `${stringQuestion} ..`;
+      secretItem = progressionItem;
     }
   }
-  const result = cons(string, secret);
-  return result;
+  return cons(stringQuestion, secretItem);
 };
 
 const makePairProgression = () => {
-  const randomStart = Math.floor(Math.random() * 10);
-  const randomStep = Math.floor(Math.random() * 10);
-  const randomPosition = Math.floor(Math.random() * 10);
-  const final = progression(randomStart, randomStep, randomPosition);
-  const pair = cons((`${car(final)}`), (`${cdr(final)}`));
-  return pair;
+  const randomStart = randomProgression();
+  const randomStep = randomProgression();
+  const randomPosition = randomProgression();
+  const progressionCalc = progression(randomStart, randomStep, randomPosition);
+  return cons((`${car(progressionCalc)}`), (`${cdr(progressionCalc)}`));
 };
 
 export default () => {
