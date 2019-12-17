@@ -1,6 +1,6 @@
 import { cons, car, cdr } from '@hexlet/pairs';
 import engineBasic from '../engine';
-import { randomProgression } from '..';
+import { randomProgression, toString } from '..';
 
 const gameDescription = 'What number is missing in the progression?';
 
@@ -26,7 +26,9 @@ const makePairProgression = () => {
   const randomStep = randomProgression();
   const randomPosition = randomProgression();
   const progressionCalc = progression(randomStart, randomStep, randomPosition);
-  return cons((`${car(progressionCalc)}`), (`${cdr(progressionCalc)}`));
+  const gameQuestion = car(progressionCalc);
+  const rightAnswer = toString(cdr(progressionCalc));
+  return cons(gameQuestion, rightAnswer);
 };
 
 export default () => {

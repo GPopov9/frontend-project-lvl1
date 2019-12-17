@@ -1,8 +1,9 @@
 import { cons } from '@hexlet/pairs';
 import engineBasic from '../engine';
-import { randomNumber, operatorSet } from '..';
+import { randomNumber, toString } from '..';
 
 const gameDescription = 'What is the result of the expression?';
+const operatorSet = ['+', '-', '*'];
 
 const buildString = (operator, numberOne, numberTwo) => {
   let calcResult = 0;
@@ -26,7 +27,9 @@ const makePairCalc = () => {
   const randomNumberOne = randomNumber();
   const randomNumberTwo = randomNumber();
   const randomOperator = operatorSet[Math.floor(Math.random() * operatorSet.length)];
-  return cons((`${randomNumberOne} ${randomOperator} ${randomNumberTwo}`), buildString(randomOperator, randomNumberOne, randomNumberTwo));
+  const gameQuestion = `${randomNumberOne} ${randomOperator} ${randomNumberTwo}`;
+  const rightAnswer = toString(buildString(randomOperator, randomNumberOne, randomNumberTwo));
+  return cons(gameQuestion, rightAnswer );
 };
 
 export default () => {

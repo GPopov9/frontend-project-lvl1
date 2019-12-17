@@ -12,8 +12,9 @@ const isPrime = (number) => {
 };
 
 const makePairPrime = () => {
-  const randomNumberOne = randomNumber();
-  return cons(randomNumberOne, isPrime(randomNumberOne));
+  const gameQuestion = randomNumber();
+  const rightAnswer = isPrime(gameQuestion);
+  return cons(gameQuestion, rightAnswer);
 };
 
 export default () => {
