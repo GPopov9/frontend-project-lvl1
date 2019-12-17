@@ -22,8 +22,8 @@ const makePairGCD = () => {
   const randomNumberTwo = randomNumber();
   const xTemp = randomNumberOne;
   const yTemp = randomNumberTwo;
-  const gameQuestion = `${randomNumberOne} ${randomNumberTwo}`
-  const rightAnswer = toString(pureGCD(xTemp, yTemp)); 
+  const gameQuestion = `${randomNumberOne} ${randomNumberTwo}`;
+  const rightAnswer = toString(pureGCD(xTemp, yTemp));
   return cons(gameQuestion, rightAnswer);
 };
 

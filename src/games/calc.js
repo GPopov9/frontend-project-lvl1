@@ -29,7 +29,7 @@ const makePairCalc = () => {
   const randomOperator = operatorSet[Math.floor(Math.random() * operatorSet.length)];
   const gameQuestion = `${randomNumberOne} ${randomOperator} ${randomNumberTwo}`;
   const rightAnswer = toString(buildString(randomOperator, randomNumberOne, randomNumberTwo));
-  return cons(gameQuestion, rightAnswer );
+  return cons(gameQuestion, rightAnswer);
 };
 
 export default () => {
