@@ -2,7 +2,7 @@ Codeclimate
 <a href="https://codeclimate.com/github/GPopov9/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/a85e9647f125f1e873f1/maintainability" /></a>
 
 Travis
-https://travis-ci.org/GPopov9/frontend-project-lvl1.svg?branch=master
+https://travis-ci.org/GPopov9/frontend-project-lvl1/builds/626372470?utm_medium=notification&utm_source=email
 
 ~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ npm link                                                                                                                     
 npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fsevents):                                                                                                        
