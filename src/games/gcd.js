@@ -18,12 +18,10 @@ const pureGCD = (a, b) => {
 };
 
 const makePairGCD = () => {
-  const randomNumberOne = randomNumber();
-  const randomNumberTwo = randomNumber();
-  const xTemp = randomNumberOne;
-  const yTemp = randomNumberTwo;
+  const randomNumberOne = randomNumber(100);
+  const randomNumberTwo = randomNumber(100);
   const gameQuestion = `${randomNumberOne} ${randomNumberTwo}`;
-  const rightAnswer = toString(pureGCD(xTemp, yTemp));
+  const rightAnswer = toString(pureGCD(randomNumberOne, randomNumberTwo));
   return cons(gameQuestion, rightAnswer);
 };
 

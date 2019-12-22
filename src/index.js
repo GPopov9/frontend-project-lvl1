@@ -1,3 +1,2 @@
-export const randomNumber = () => Math.floor(Math.random() * 101);
-export const randomProgression = () => Math.floor(Math.random() * 10) + 1;
+export const randomNumber = (num) => Math.floor(Math.random() * num);
 export const toString = (num) => String(num);

@@ -6,14 +6,14 @@ const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer
 
 const isPrime = (number) => {
   for (let i = 2; i < number; i += 1) {
-    if (number % i === 0) return 'no';
+    if (number % i === 0) return false;
   }
-  return 'yes';
+  return true;
 };
 
 const makePairPrime = () => {
-  const gameQuestion = randomNumber();
-  const rightAnswer = isPrime(gameQuestion);
+  const gameQuestion = randomNumber(100);
+  const rightAnswer = (isPrime(gameQuestion)) ? 'yes' : 'no';
   return cons(gameQuestion, rightAnswer);
 };
 

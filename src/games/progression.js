@@ -1,11 +1,11 @@
 import { cons, car, cdr } from '@hexlet/pairs';
 import engineBasic from '../engine';
-import { randomProgression, toString } from '..';
+import { randomNumber, toString } from '..';
 
 const gameDescription = 'What number is missing in the progression?';
+const length = 10;
 
 const progression = (x, y, z) => {
-  const length = 10;
   let stringQuestion = '';
   let secretItem = 0;
 
@@ -22,9 +22,9 @@ const progression = (x, y, z) => {
 };
 
 const makePairProgression = () => {
-  const randomStart = randomProgression();
-  const randomStep = randomProgression();
-  const randomPosition = randomProgression();
+  const randomStart = randomNumber(10);
+  const randomStep = randomNumber(10);
+  const randomPosition = randomNumber(10) + 1;
   const progressionCalc = progression(randomStart, randomStep, randomPosition);
   const gameQuestion = car(progressionCalc);
   const rightAnswer = toString(cdr(progressionCalc));
