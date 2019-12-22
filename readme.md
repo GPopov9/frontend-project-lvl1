@@ -3,6 +3,7 @@ Codeclimate
 
 Travis
 https://travis-ci.org/GPopov9/frontend-project-lvl1/builds/626372470?utm_medium=notification&utm_source=email
+https://travis-ci.org/GPopov9/frontend-project-lvl1.svg?branch=master
 
 ~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ npm link                                                                                                                     
 npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fsevents):                                                                                                        
