@@ -19,7 +19,8 @@ export default (gameDescription, func) => {
     if (userAnswer === cdr(answersPair)) {
       console.log('Correct!');
     } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${cdr(answersPair)}'.\nLet's try again, ${name}!`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${cdr(answersPair)}'.`);
+      console.log(`Let's try again, ${name}!`);
       return;
     }
   }
