@@ -1,11 +1,12 @@
 import { cons } from '@hexlet/pairs';
 import engineBasic from '../engine';
-import randomNumber from '..';
+import { randomNumber, startNumber, endNumber } from '..';
 
 const gameDescription = 'What is the result of the expression?';
-const operatorSet = ['+', '-', '*'];
+const operators = ['+', '-', '*'];
+const operatorsLength = operators.length - 1;
 
-const buildString = (operator, numberOne, numberTwo) => {
+const calcultateAnswer = (operator, numberOne, numberTwo) => {
   let calcResult;
   switch (operator) {
     case '+':
@@ -23,15 +24,15 @@ const buildString = (operator, numberOne, numberTwo) => {
   return calcResult;
 };
 
-const makePairCalc = () => {
-  const randomNumberOne = randomNumber(10);
-  const randomNumberTwo = randomNumber(10);
-  const randomOperator = operatorSet[Math.floor(Math.random() * operatorSet.length)];
+const pairForCalculatorGame = () => {
+  const randomNumberOne = randomNumber(startNumber, endNumber);
+  const randomNumberTwo = randomNumber(startNumber, endNumber);
+  const randomOperator = operators[randomNumber(startNumber, operatorsLength)];
   const gameQuestion = `${randomNumberOne} ${randomOperator} ${randomNumberTwo}`;
-  const rightAnswer = String((buildString(randomOperator, randomNumberOne, randomNumberTwo)));
+  const rightAnswer = String((calcultateAnswer(randomOperator, randomNumberOne, randomNumberTwo)));
   return cons(gameQuestion, rightAnswer);
 };
 
 export default () => {
-  engineBasic(gameDescription, makePairCalc);
+  engineBasic(gameDescription, pairForCalculatorGame);
 };
