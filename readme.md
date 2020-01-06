@@ -39,145 +39,42 @@ $ brain-prime
 ```
 [![asciicast](https://asciinema.org/a/292133.svg)](https://asciinema.org/a/292133)
 
+## Game: "Calculator"
 
+**Prerequisites:**
+* User get a random math expression 
+* User must answer (type) correct result
+* In case of correct answer - message "Correct", otherwise - message "Try Again!" 
+* Game longs until 3 correct answers or 1 incorrect.
 
+**Launch** 
+```
+$ brain-calc
+```
+[![asciicast](https://asciinema.org/a/292136.svg)](https://asciinema.org/a/292136)
 
+## Game: "Greatest Common Divisor"
 
+**Prerequisites:**
+* User get random two numbers 
+* User must answer (type) correct greatest common divisor
+* In case of correct answer - message "Correct", otherwise - message "Try Again!" 
+* Game longs until 3 correct answers or 1 incorrect.
 
+**Launch** 
+```
+$ brain-gcd
+```
+[![asciicast](https://asciinema.org/a/292141.svg)](https://asciinema.org/a/292141)
 
+**Prerequisites:**
+* User get random progression with hidden item 
+* User must answer (type) correct hidden element
+* In case of correct answer - message "Correct", otherwise - message "Try Again!" 
+* Game longs until 3 correct answers or 1 incorrect.
 
-
-Running "Calculator Game" with all correct answers:
-
-~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ brain-calc                                                                                                       
-Welcome to the Brain Games!                                                                                                                                                        
-What is the result of the expression?                                                                                                                                              
-                                                                                                                                                                                   
-May I have your name? George                                                                                                                                                       
-Hello, George!                                                                                                                                                                     
-                                                                                                                                                                                   
-Question: 6 + 0                                                                                                                                                                    
-Your answer: 6                                                                                                                                                                     
-Correct!                                                                                                                                                                           
-Question: 0 + 7                                                                                                                                                                    
-Your answer: 7                                                                                                                                                                     
-Correct!                                                                                                                                                                           
-Question: 5 - 3                                                                                                                                                                    
-Your answer: 2                                                                                                                                                                     
-Correct!                                                                                                                                                                           
-Congratulations, George!                                                                                                                                                           
-~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ exit                                                                                                             
-exit                                                        
-
------
-
-Running "Calculator Game" with the second wrong answer:
-
-~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ brain-calc                                                                                                       
-Welcome to the Brain Games!                                                                                                                                                        
-What is the result of the expression?                                                                                                                                              
-                                                                                                                                                                                   
-May I have your name? George                                                                                                                                                       
-Hello, George!                                                                                                                                                                     
-                                                                                                                                                                                   
-Question: 8 + 1                                                                                                                                                                    
-Your answer: 9                                                                                                                                                                     
-Correct!                                                                                                                                                                           
-Question: 0 - 4                                                                                                                                                                    
-Your answer: 1                                                                                                                                                                     
-'1' is wrong answer ;(. Correct answer was '-4'.                                                                                                                                   
-Let's try again, George!                                                                                                                                                           
-~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ exit                                                                                                             
-exit                                                          
-
------
-
-Running "GCD Game" with all correct answers
-
-~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ brain-gcd                                                                                                        
-Welcome to the Brain Games!                                                                                                                                                        
-Find the greatest common divisor of given numbers.                                                                                                                                 
-                                                                                                                                                                                   
-May I have your name? George                                                                                                                                                       
-Hello, George!                                                                                                                                                                     
-                                                                                                                                                                                   
-Question: 5 8                                                                                                                                                                      
-Your answer: 1                                                                                                                                                                     
-Correct!                                                                                                                                                                           
-Question: 6 1                                                                                                                                                                      
-Your answer: 1                                                                                                                                                                     
-Correct!                                                                                                                                                                           
-Question: 6 3                                                                                                                                                                      
-Your answer: 3                                                                                                                                                                     
-Correct!                                                                                                                                                                           
-Congratulations, George!                                                                                                                                                           
-~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ exit                                                                                                             
-exit              
-
------
-
-Running "GCD Game" with the second wrong answer:
-
-~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ brain-gcd                                                                                                        
-Welcome to the Brain Games!                                                                                                                                                        
-Find the greatest common divisor of given numbers.                                                                                                                                 
-                                                                                                                                                                                   
-May I have your name? George                                                                                                                                                       
-Hello, George!                                                                                                                                                                     
-                                                                                                                                                                                   
-Question: 9 2                                                                                                                                                                      
-Your answer: 1                                                                                                                                                                     
-Correct!                                                                                                                                                                           
-Question: 3 3                                                                                                                                                                      
-Your answer: 1                                                                                                                                                                     
-'1' is wrong answer ;(. Correct answer was '3'.                                                                                                                                    
-Let's try again, George!                                                                                                                                                           
-~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ exit                                                                                                             
-exit                         
-
------
-
-Running "Progression Game" with all correct answers:
-
-~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ brain-progression                                                                                                
-Welcome to the Brain Games!                                                                                                                                                        
-What number is missing in the progression?                                                                                                                                         
-                                                                                                                                                                                   
-May I have your name? George                                                                                                                                                       
-Hello, George!                                                                                                                                                                     
-                                                                                                                                                                                   
-Question: 0 7 14 21 .. 35 42 49 56 63                                                                                                                                              
-Your answer: 28                                                                                                                                                                    
-Correct!                                                                                                                                                                           
-Question: 8 8 8 8 8 8 8 .. 8 8                                                                                                                                                     
-Your answer: 8                                                                                                                                                                     
-Correct!                                                                                                                                                                           
-Question: 9 13 .. 21 25 29 33 37 41 45                                                                                                                                             
-Your answer: 17                                                                                                                                                                    
-Correct!                                                                                                                                                                           
-Congratulations, George!                                                                                                                                                           
-~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ exit                                                                                                             
-exit         
-
------
-
-Running "Progression Game" with the second wrong answer:
-
-~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ brain-progression                                                                                                
-Welcome to the Brain Games!                                                                                                                                                        
-What number is missing in the progression?                                                                                                                                         
-                                                                                                                                                                                   
-May I have your name? George                                                                                                                                                       
-Hello, George!                                                                                                                                                                     
-                                                                                                                                                                                   
-Question: 7 15 .. 31 39 47 55 63 71 79                                                                                                                                             
-Your answer: 23                                                                                                                                                                    
-Correct!                                                                                                                                                                           
-Question: 7 13 19 25 31 37 43 49 .. 61                                                                                                                                             
-Your answer: 1                                                                                                                                                                     
-'1' is wrong answer ;(. Correct answer was '55'.                                                                                                                                   
-Let's try again, George!                                                                                                                                                           
-~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ exit                                                                                                             
-exit     
-
-----
+**Launch** 
+```
+$ brain-progression
+```
+[![asciicast](https://asciinema.org/a/292144.svg)](https://asciinema.org/a/292144)
