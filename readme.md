@@ -11,8 +11,19 @@ $ npm link
 ```
 [![asciicast](https://asciinema.org/a/292120.svg)](https://asciinema.org/a/292120)
 
+## Game: "Is the number even?"
 
+Prerequisites:
+* User get a random number 
+* User must answer (type) "yes" or "no"
+* In case of correct answer - message "Correct", otherwise - message "Try Again!" 
+* Game longs until 3 correct answers or 1 incorrect.
 
+**Launch** 
+```
+$ brain-even
+```
+[![asciicast](https://asciinema.org/a/292127.svg)](https://asciinema.org/a/292127)
 
 
 Overview: 
