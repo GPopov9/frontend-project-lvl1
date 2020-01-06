@@ -1,7 +1,9 @@
-CodeClimate <a href="https://codeclimate.com/github/GPopov9/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/a85e9647f125f1e873f1/maintainability" /></a>
+<a href="https://codeclimate.com/github/GPopov9/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/a85e9647f125f1e873f1/maintainability" /></a> [![Build Status](https://travis-ci.org/GPopov9/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/GPopov9/frontend-project-lvl1)
 
-Travis [![Build Status](https://travis-ci.org/GPopov9/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/GPopov9/frontend-project-lvl1)
+# frontend-project-lvl1 (Hexlet.io)
+Project contains set of console games **(Brain-Games)**. Completed as a part of exercises "FrontEnd JavaScript" profession on [Hexlet](https://hexlet.io/).   
 
+## 
 Overview: 
 Project contains the following features below based on user input (user should type correct answer):  
 - Check if the number is even 

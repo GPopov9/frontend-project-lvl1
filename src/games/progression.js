@@ -21,7 +21,7 @@ const makeProgression = (startItem, progressionStep, secretPosition) => {
   return cons(stringQuestion, secretItem);
 };
 
-const pairForProgressionGame = () => {
+const makePairForProgressionGame = () => {
   const randomStart = randomNumber(startNumber, endNumber);
   const randomStep = randomNumber(startNumber, endNumber);
   const randomPosition = randomNumber(startNumber, progressionLength - 1);
@@ -32,5 +32,5 @@ const pairForProgressionGame = () => {
 };
 
 export default () => {
-  engineBasic(gameDescription, pairForProgressionGame);
+  engineBasic(gameDescription, makePairForProgressionGame);
 };
