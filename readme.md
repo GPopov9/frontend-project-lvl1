@@ -13,9 +13,9 @@ $ npm link
 
 ## Game: "Is the number even?"
 
-Prerequisites:
+**Prerequisites:**
 * User get a random number 
-* User must answer (type) "yes" or "no"
+* User must answer (type) "yes" (even number) or "no" 
 * In case of correct answer - message "Correct", otherwise - message "Try Again!" 
 * Game longs until 3 correct answers or 1 incorrect.
 
@@ -25,129 +25,27 @@ $ brain-even
 ```
 [![asciicast](https://asciinema.org/a/292127.svg)](https://asciinema.org/a/292127)
 
+## Game: "Is the number prime?"
 
-Overview: 
-Project contains the following features below based on user input (user should type correct answer):  
-- Check if the number is even 
-- Check if the number is prime 
-- Check calculated result of the expression (random numbers & operators)
-- Check entered GCD 
-- Check missed progression item 
+**Prerequisites:**
+* User get a random number 
+* User must answer (type) "yes" (prime number) or "no"
+* In case of correct answer - message "Correct", otherwise - message "Try Again!" 
+* Game longs until 3 correct answers or 1 incorrect.
 
------ 
-Running npm link 
+**Launch** 
+```
+$ brain-prime
+```
+[![asciicast](https://asciinema.org/a/292133.svg)](https://asciinema.org/a/292133)
 
-~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ npm link                                                                                                         
-npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fsevents):                                                                                            
-npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})                  
-                                                                                                                                                                                   
-audited 4051 packages in 3.954s                                                                                                                                                    
-                                                                                                                                                                                   
-5 packages are looking for funding                                                                                                                                                 
-  run `npm fund` for details                                                                                                                                                       
-                                                                                                                                                                                   
-found 0 vulnerabilities                                                                                                                                                            
-                                                                                                                                                                                   
-/usr/local/bin/brain-even -> /usr/local/lib/node_modules/frontend-project-1/dist/bin/brain-even.js                                                                                 
-/usr/local/bin/brain-calc -> /usr/local/lib/node_modules/frontend-project-1/dist/bin/brain-calc.js                                                                                 
-/usr/local/bin/brain-progression -> /usr/local/lib/node_modules/frontend-project-1/dist/bin/brain-progression.js                                                                   
-/usr/local/bin/brain-gcd -> /usr/local/lib/node_modules/frontend-project-1/dist/bin/brain-gcd.js                                                                                   
-/usr/local/bin/brain-prime -> /usr/local/lib/node_modules/frontend-project-1/dist/bin/brain-prime.js                                                                               
-/usr/local/lib/node_modules/frontend-project-1 -> /home/george/Documents/_Projects/5_Hexlet/frontend-project-lvl1                                                                  
-~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ exit                                                                                                             
-exit  
 
------
 
-Running "Even Game" with all correct answers: 
 
-~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ brain-even                                                                                                       
-Welcome to the Brain Games!                                                                                                                                                        
-Answer "yes" if the number is even, otherwise answer "no".                                                                                                                         
-                                                                                                                                                                                   
-May I have your name? George                                                                                                                                                       
-Hello, George!                                                                                                                                                                     
-                                                                                                                                                                                   
-Question: 5                                                                                                                                                                        
-Your answer: no                                                                                                                                                                    
-Correct!                                                                                                                                                                           
-Question: 9                                                                                                                                                                        
-Your answer: no                                                                                                                                                                    
-Correct!                                                                                                                                                                           
-Question: 5                                                                                                                                                                        
-Your answer: no                                                                                                                                                                    
-Correct!                                                                                                                                                                           
-Congratulations, George!                                                                                                                                                           
-~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ exit                                                                                                             
-exit 
 
------ 
 
-Running "Even Game" with the second wrong answer: 
 
-~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ brain-even                                                                                                       
-Welcome to the Brain Games!                                                                                                                                                        
-Answer "yes" if the number is even, otherwise answer "no".                                                                                                                         
-                                                                                                                                                                                   
-May I have your name? George                                                                                                                                                       
-Hello, George!                                                                                                                                                                     
-                                                                                                                                                                                   
-Question: 1                                                                                                                                                                        
-Your answer: no                                                                                                                                                                    
-Correct!                                                                                                                                                                           
-Question: 5                                                                                                                                                                        
-Your answer: yes                                                                                                                                                                   
-'yes' is wrong answer ;(. Correct answer was 'no'.                                                                                                                                 
-Let's try again, George!                                                                                                                                                           
-~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ exit                                                                                                             
-exit                                                                                                                                                                               
-      
------
 
-Running "Prime Game" with all correct answers: 
-
-~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ brain-prime                                                                                                      
-Welcome to the Brain Games!                                                                                                                                                        
-Answer "yes" if given number is prime. Otherwise answer "no".                                                                                                                      
-                                                                                                                                                                                   
-May I have your name? George                                                                                                                                                       
-Hello, George!                                                                                                                                                                     
-                                                                                                                                                                                   
-Question: 8                                                                                                                                                                        
-Your answer: no                                                                                                                                                                    
-Correct!                                                                                                                                                                           
-Question: 7                                                                                                                                                                        
-Your answer: yes                                                                                                                                                                   
-Correct!                                                                                                                                                                           
-Question: 4                                                                                                                                                                        
-Your answer: no                                                                                                                                                                    
-Correct!                                                                                                                                                                           
-Congratulations, George!                                                                                                                                                           
-~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ exit                                                                                                             
-exit               
-
------
-
-Running "Prime Game" with the second wrong answer:
-
-~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ brain-prime                                                                                                      
-Welcome to the Brain Games!                                                                                                                                                        
-Answer "yes" if given number is prime. Otherwise answer "no".                                                                                                                      
-                                                                                                                                                                                   
-May I have your name? George                                                                                                                                                       
-Hello, George!                                                                                                                                                                     
-                                                                                                                                                                                   
-Question: 8                                                                                                                                                                        
-Your answer: no                                                                                                                                                                    
-Correct!                                                                                                                                                                           
-Question: 4                                                                                                                                                                        
-Your answer: yes                                                                                                                                                                   
-'yes' is wrong answer ;(. Correct answer was 'no'.                                                                                                                                 
-Let's try again, George!                                                                                                                                                           
-~/Documents/_Projects/5_Hexlet/frontend-project-lvl1$ exit                                                                                                             
-exit                                                                  
-
------
 
 Running "Calculator Game" with all correct answers:
 
