@@ -3,7 +3,18 @@
 # frontend-project-lvl1 (Hexlet.io)
 Project contains set of console games **(Brain-Games)**. Completed as a part of exercises "FrontEnd JavaScript" profession on [Hexlet](https://hexlet.io/).   
 
-## 
+Mentor [Sergey Karpuk](https://ru.hexlet.io/u/ck)
+
+## Installation  
+```
+$ npm link
+```
+<a href="https://asciinema.org/a/292120" target="_blank"><img src="https://asciinema.org/a/292120.svg" /></a>
+
+
+
+
+
 Overview: 
 Project contains the following features below based on user input (user should type correct answer):  
 - Check if the number is even 
