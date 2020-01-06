@@ -9,7 +9,7 @@ Mentor [Sergey Karpuk](https://ru.hexlet.io/u/ck)
 ```
 $ npm link
 ```
-<a href="https://asciinema.org/a/292120" target="_blank"><img src="https://asciinema.org/a/292120.svg" /></a>
+[![asciicast](https://asciinema.org/a/292120.svg)](https://asciinema.org/a/292120)
 
 
 
