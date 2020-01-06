@@ -67,6 +67,8 @@ $ brain-gcd
 ```
 [![asciicast](https://asciinema.org/a/292141.svg)](https://asciinema.org/a/292141)
 
+## Game: "Progression"
+
 **Prerequisites:**
 * User get random progression with hidden item 
 * User must answer (type) correct hidden element
