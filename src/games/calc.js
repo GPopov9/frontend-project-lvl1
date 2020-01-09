@@ -4,7 +4,7 @@ import { randomNumber, startNumber, endNumber } from '..';
 
 const gameDescription = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
-const operatorItemsCount = operators.length - 1;
+const operatorLength = operators.length;
 
 const calcultateAnswer = (operator, numberOne, numberTwo) => {
   let calcResult;
@@ -24,15 +24,15 @@ const calcultateAnswer = (operator, numberOne, numberTwo) => {
   return calcResult;
 };
 
-const makePairForCalculatorGame = () => {
+const makeDataForCalculatorGame = () => {
   const randomNumberOne = randomNumber(startNumber, endNumber);
   const randomNumberTwo = randomNumber(startNumber, endNumber);
-  const randomOperator = operators[randomNumber(startNumber, operatorItemsCount)];
+  const randomOperator = operators[randomNumber(startNumber, operatorLength - 1)];
   const gameQuestion = `${randomNumberOne} ${randomOperator} ${randomNumberTwo}`;
   const rightAnswer = String((calcultateAnswer(randomOperator, randomNumberOne, randomNumberTwo)));
   return cons(gameQuestion, rightAnswer);
 };
 
 export default () => {
-  engineBasic(gameDescription, makePairForCalculatorGame);
+  engineBasic(gameDescription, makeDataForCalculatorGame);
 };

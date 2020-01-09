@@ -12,12 +12,12 @@ const isPrime = (number) => {
   return true;
 };
 
-const makePairForPrimeGame = () => {
+const makeDataForPrimeGame = () => {
   const gameQuestion = randomNumber(startNumber, endNumber);
   const rightAnswer = (isPrime(gameQuestion)) ? 'yes' : 'no';
   return cons(gameQuestion, rightAnswer);
 };
 
 export default () => {
-  engineBasic(gameDescription, makePairForPrimeGame);
+  engineBasic(gameDescription, makeDataForPrimeGame);
 };

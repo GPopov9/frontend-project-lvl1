@@ -17,7 +17,7 @@ const findGCD = (a, b) => {
   return firstNum;
 };
 
-const makePairForGcdGame = () => {
+const makeDataForGcdGame = () => {
   const randomNumberOne = randomNumber(startNumber, endNumber);
   const randomNumberTwo = randomNumber(startNumber, endNumber);
   const gameQuestion = `${randomNumberOne} ${randomNumberTwo}`;
@@ -26,5 +26,5 @@ const makePairForGcdGame = () => {
 };
 
 export default () => {
-  engineBasic(gameDescription, makePairForGcdGame);
+  engineBasic(gameDescription, makeDataForGcdGame);
 };

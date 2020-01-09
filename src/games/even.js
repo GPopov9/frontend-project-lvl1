@@ -6,12 +6,12 @@ const gameDescription = 'Answer "yes" if the number is even, otherwise answer "n
 
 const isEven = (num) => num % 2 === 0;
 
-const makePairForEvenGame = () => {
+const makeDataForEvenGame = () => {
   const gameQuestion = randomNumber(startNumber, endNumber);
   const rightAnswer = (isEven(gameQuestion)) ? 'yes' : 'no';
   return cons(gameQuestion, rightAnswer);
 };
 
 export default () => {
-  engineBasic(gameDescription, makePairForEvenGame);
+  engineBasic(gameDescription, makeDataForEvenGame);
 };

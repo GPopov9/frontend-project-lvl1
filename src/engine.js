@@ -4,6 +4,7 @@ import readlineSync from 'readline-sync';
 
 const questionsCount = 3;
 
+
 export default (gameDescription, func) => {
   console.log('Welcome to the Brain Games!');
   console.log(gameDescription);
@@ -13,13 +14,15 @@ export default (gameDescription, func) => {
   console.log('');
   for (let i = 0; i < questionsCount; i += 1) {
     const answersPair = func();
-    console.log(`Question: ${car(answersPair)}`);
+    const questionMessage = car(answersPair);
+    const rightAnswer = cdr(answersPair);
+    console.log(`Question: ${questionMessage}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (userAnswer === cdr(answersPair)) {
+    if (userAnswer === rightAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${cdr(answersPair)}'.`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
       return;
     }
