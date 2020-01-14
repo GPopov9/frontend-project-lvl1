@@ -5,28 +5,27 @@ import { randomNumber, startNumber, endNumber } from '..';
 const gameDescription = 'What number is missing in the progression?';
 const progressionLength = 10;
 
-const hiddenElement = (a, b, i) => a + b * i;
+const findProgressionItem = (a, b, i) => a + b * i;
 
-const makeProgression = (startItem, progressionStep, secretPosition) => {
-  let stringQuestion = '';
+const getProgressionQuestion = (startItem, progressionStep, secretPosition) => {
+  let question = '';
   for (let i = 0; i < progressionLength; i += 1) {
     const progressionItem = startItem + progressionStep * i;
     if (i !== secretPosition) {
-      stringQuestion = `${stringQuestion} ${progressionItem}`;
+      question = `${question} ${progressionItem}`;
     } else {
-      stringQuestion = `${stringQuestion} ..`;
+      question = `${question} ..`;
     }
   }
-  return stringQuestion;
+  return question.trim();
 };
 
 const makeDataForProgressionGame = () => {
   const randomStart = randomNumber(startNumber, endNumber);
   const randomStep = randomNumber(startNumber, endNumber);
   const randomPosition = randomNumber(startNumber, progressionLength - 1);
-  const progression = makeProgression(randomStart, randomStep, randomPosition);
-  const gameQuestion = progression.trim();
-  const rightAnswer = String(hiddenElement(randomStart, randomStep, randomPosition));
+  const gameQuestion = getProgressionQuestion(randomStart, randomStep, randomPosition);
+  const rightAnswer = String(findProgressionItem(randomStart, randomStep, randomPosition));
   return cons(gameQuestion, rightAnswer);
 };
 

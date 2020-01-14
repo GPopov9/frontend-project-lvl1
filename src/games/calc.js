@@ -4,9 +4,9 @@ import { randomNumber, startNumber, endNumber } from '..';
 
 const gameDescription = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
-const operatorLength = operators.length;
+const operatorsCount = operators.length;
 
-const calcultateAnswer = (operator, numberOne, numberTwo) => {
+const getCalculatorResult = (operator, numberOne, numberTwo) => {
   let calcResult;
   switch (operator) {
     case '+':
@@ -27,9 +27,9 @@ const calcultateAnswer = (operator, numberOne, numberTwo) => {
 const makeDataForCalculatorGame = () => {
   const randomNumberOne = randomNumber(startNumber, endNumber);
   const randomNumberTwo = randomNumber(startNumber, endNumber);
-  const randomOperator = operators[randomNumber(startNumber, operatorLength - 1)];
+  const randomOperator = operators[randomNumber(startNumber, operatorsCount - 1)];
   const gameQuestion = `${randomNumberOne} ${randomOperator} ${randomNumberTwo}`;
-  const rightAnswer = String((calcultateAnswer(randomOperator, randomNumberOne, randomNumberTwo)));
+  const rightAnswer = String(getCalculatorResult(randomOperator, randomNumberOne, randomNumberTwo));
   return cons(gameQuestion, rightAnswer);
 };
 

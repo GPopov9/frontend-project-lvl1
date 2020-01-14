@@ -4,8 +4,7 @@ import readlineSync from 'readline-sync';
 
 const questionsCount = 3;
 
-
-export default (gameDescription, func) => {
+export default (gameDescription, getGameData) => {
   console.log('Welcome to the Brain Games!');
   console.log(gameDescription);
   console.log('');
@@ -13,10 +12,10 @@ export default (gameDescription, func) => {
   console.log(`Hello, ${name}!`);
   console.log('');
   for (let i = 0; i < questionsCount; i += 1) {
-    const answersPair = func();
-    const questionMessage = car(answersPair);
-    const rightAnswer = cdr(answersPair);
-    console.log(`Question: ${questionMessage}`);
+    const gameData = getGameData();
+    const gameQuestion = car(gameData);
+    const rightAnswer = cdr(gameData);
+    console.log(`Question: ${gameQuestion}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer === rightAnswer) {
