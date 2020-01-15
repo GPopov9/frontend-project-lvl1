@@ -7,7 +7,7 @@ const progressionLength = 10;
 
 const findProgressionItem = (a, b, i) => a + b * i;
 
-const getProgressionQuestion = (startItem, progressionStep, secretPosition) => {
+const getQuestion = (startItem, progressionStep, secretPosition) => {
   let question = '';
   for (let i = 0; i < progressionLength; i += 1) {
     const progressionItem = startItem + progressionStep * i;
@@ -24,7 +24,7 @@ const makeDataForProgressionGame = () => {
   const randomStart = randomNumber(startNumber, endNumber);
   const randomStep = randomNumber(startNumber, endNumber);
   const randomPosition = randomNumber(startNumber, progressionLength - 1);
-  const gameQuestion = getProgressionQuestion(randomStart, randomStep, randomPosition);
+  const gameQuestion = getQuestion(randomStart, randomStep, randomPosition);
   const rightAnswer = String(findProgressionItem(randomStart, randomStep, randomPosition));
   return cons(gameQuestion, rightAnswer);
 };
